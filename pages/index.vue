@@ -15,5 +15,5 @@ export default {}
   h1
     color: red
     p
-      font-size: 100px
+      font-size: 10px
 </style>
