@@ -1,10 +1,20 @@
 <template lang="pug">
 section.home
-  h1 VideoEdithingSchoolAlign
-    // p コーディングお願い致します！
-    ul
-      li 口コミを書く
-      li お問い合わせ
+  div.header
+    div.header_top
+      div.header_top-text
+        p VideoEdithingSchoolAlign
+      div.header_top-right
+        p.btn_left 口コミを書く
+        p.btn_right お問い合わせ
+    div.header_bottom
+      div.logo ろご
+      ul.links
+        li HOME
+        li ランキング
+        li カテゴリ
+        li スクール検索
+        li  口コミを書く
     ul
       li HOME
       li ランキング
@@ -22,7 +32,7 @@ section.home
       li カテゴリ
       li カテゴリ
     ul
-      li スクール検索
+
     ul
       li カテゴリ
       li HOME
@@ -119,24 +129,57 @@ section.home
     li: a(href="/") SNS
     li: a(href="/") SNS
   p © 2020 VideoEdithingSchoolAlign
-
-
-
-
-
-
 </template>
 
 <script>
 export default {}
 </script>
+<style lang="sass">
+body
+  padding: 0
+  margin: 0
+</style>
+
 
 <style lang="sass" scoped>
 .home
-  background: yelloow
-  h1
-    color: red
-    ul
-      margin: 20px;
-
+  padding: 0
+  margin: 0
+  .header
+    .header_top
+      height: 40px
+      padding: 0 50px
+      background: #1c385e
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-text
+        color: #ffffff
+      &-right
+        display: flex
+        p
+          font-size: 14px
+          padding: 2px 3px
+          margin-right: 10px
+          border-radius: 3px
+        .btn_left
+          background: #f9cc46
+        .btn_right
+          color: #ffffff
+          background: #df1843
+    .header_bottom
+      height: 80px
+      background: #1c385e
+      opacity: 0.9
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 0 50px
+      font-size: 24px
+      .links
+        color: #ffffff
+        display: flex
+        list-style: none
+        li
+          margin-left: 15px
 </style>
