@@ -8,7 +8,7 @@ section.home
         p.btn_left 口コミを書く
         p.btn_right お問い合わせ
     div.header_bottom
-      div.logo ろご
+      div: img(src="https://placehold.jp/350x60.png")
       ul.links
         li HOME
         li ランキング
