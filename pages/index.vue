@@ -1,6 +1,7 @@
 <template lang="pug">
 section.home
   h1 トップページ
+    p コーディングお願い致します！
 
 </template>
 
@@ -13,4 +14,6 @@ export default {}
   background: yelloow
   h1
     color: red
+    p
+      font-size: 100px
 </style>
