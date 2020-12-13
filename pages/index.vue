@@ -15,6 +15,8 @@ section.home
         li カテゴリ
         li スクール検索
         li  口コミを書く
+  div.search_home
+
     ul
       li HOME
       li ランキング
@@ -147,7 +149,7 @@ body
   margin: 0
   .header
     .header_top
-      height: 40px
+      height: 60px
       padding: 0 50px
       background: #1c385e
       display: flex
@@ -168,7 +170,7 @@ body
           color: #ffffff
           background: #df1843
     .header_bottom
-      height: 80px
+      height: 100px
       background: #1c385e
       opacity: 0.9
       display: flex
@@ -181,5 +183,10 @@ body
         display: flex
         list-style: none
         li
-          margin-left: 15px
+          margin-left: 35px
+  .search_home
+    padding: 10px 10px
+    margin: 0 25
+    background: #f9cc46
+
 </style>
