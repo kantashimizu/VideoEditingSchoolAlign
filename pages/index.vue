@@ -14,7 +14,7 @@ section.home
         li ランキング
         li カテゴリ
         li スクール検索
-        li  口コミを書く
+        li 口コミを書く
     div.search_home
       div.search_home-centerbox
         div.search_home-text
@@ -25,7 +25,9 @@ section.home
               li.select_box 口コミ
               li.select_box 受講場所
           h1 詳細条件
-  h2 おすすめランキング
+    div.main-content
+      div.main-ranking
+        h1.main-ranking おすすめランキング
 
     div もっとランキングを見る
 
@@ -110,6 +112,7 @@ body
 .home
   padding: 0
   margin: 0
+  background: #ffffff
   .header
     .header_top
       height: 60px
@@ -168,7 +171,17 @@ body
         .select_box
           display: inline-block
           list-style: none
-          margin: 20px 88px
-          //width: auto
+          margin: 23px 89px
+    .main-content
+      //padding: 30px 5%
+      //width: 100%
+      //max-width: 100%
+      //padding-bottom: 50px
+      //float: none
+      .main-ranking
+        background: #ffffff
+        //position: relative
+        text-align: center
+        overflow: hidden
 
 </style>
