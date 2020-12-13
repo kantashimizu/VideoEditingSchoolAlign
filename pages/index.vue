@@ -15,39 +15,9 @@ section.home
         li カテゴリ
         li スクール検索
         li  口コミを書く
-  div.search_home
-
-    ul
-      li HOME
-      li ランキング
-      li カテゴリ
-    ul
-      li アイテム
-      li HOME
-      li ランキング
-      li カテゴリ
-      li HOME
-      li ランキング
-      li カテゴリ
-      li HOME
-      li ランキング
-      li カテゴリ
-      li カテゴリ
-    ul
-
-    ul
-      li カテゴリ
-      li HOME
-      li ランキング
-      li カテゴリ
-      li カテゴリ
-    ul
-      li  口コミを書く
-    p MENU
-  h2 検索
-
-  h2 カテゴリ
-
+    div.search_home
+      div.search_home-center
+        h2.search_home-text 検索
   h2 受講場所
 
   h2 価格
@@ -170,7 +140,7 @@ body
           color: #ffffff
           background: #df1843
     .header_bottom
-      height: 100px
+      height: 80px
       background: #1c385e
       opacity: 0.9
       display: flex
@@ -185,8 +155,18 @@ body
         li
           margin-left: 35px
   .search_home
-    padding: 10px 10px
-    margin: 0 25
+    padding: 15px 50px
+    margin: 0 0
+    height: 350px
     background: #f9cc46
-
+    .search_home-center
+      align-items: center
+      justify-content: space-between
+      border-radius: 10px
+      background: #ffffff
+      height: 300px
+      h2
+       .search_home-text
+        display: inline-block
+        text-align: center
 </style>
