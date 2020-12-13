@@ -16,22 +16,15 @@ section.home
         li スクール検索
         li  口コミを書く
     div.search_home
-      div.search_home-center
-        h2.search_home-text 検索
-  h2 受講場所
-
-  h2 価格
-
-  h2 口コミ
-
-  h2 詳細条件
-    ul
-      li オンライン
-      li 無料体験
-      li 就職サポート
-
-    ul
-      li トップページ
+      div.search_home-centerbox
+        div.search_home-text
+          h1 検索
+            ul
+              li.select_box 価格
+              li.select_box 詳細条件
+              li.select_box 口コミ
+              li.select_box 受講場所
+          h1 詳細条件
   h2 おすすめランキング
 
     div もっとランキングを見る
@@ -148,25 +141,34 @@ body
       justify-content: space-between
       padding: 0 50px
       font-size: 24px
+      img
+        width: auto
       .links
         color: #ffffff
         display: flex
         list-style: none
+        width: auto
         li
-          margin-left: 35px
+          margin-left: 22px
   .search_home
     padding: 15px 50px
     margin: 0 0
     height: 350px
     background: #f9cc46
-    .search_home-center
+    .search_home-centerbox
       align-items: center
       justify-content: space-between
-      border-radius: 10px
+      border-radius: 20px
       background: #ffffff
-      height: 300px
-      h2
-       .search_home-text
+      height: 100%
+      float: left
+      width: 100%
+      .search_home-text
         display: inline-block
-        text-align: center
+        .select_box
+          display: inline-block
+          list-style: none
+          margin: 20px 88px
+          //width: auto
+
 </style>
