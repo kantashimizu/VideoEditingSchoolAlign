@@ -1,52 +1,9 @@
 <template lang="pug">
 section.home
-  div.header
-    div.header_top
-      div.header_top-text
-        p VideoEdithingSchoolAlign
-      div.header_top-right
-        p.btn_left 口コミを書く
-        p.btn_right お問い合わせ
-    div.header_bottom
-      img(src="https://placehold.jp/350x60.png")
-      ul.links
-        li HOME
-        li ランキング
-        li カテゴリ
-        li スクール検索
-        li 口コミを書く
-  div.search
-    div.search_home
-      div.search_home-input
-        h2 検索
-        input(
-          placeholder="検索"
-          name="search_text"
-          type="text"
-        )
-      div.search_home-selects
-        div.select
-          p 受講場所
-          v-select.input(
-            v-model="selected"
-            placeholder="価格を選択"
-            :options="price"
-          )
-        div.select
-          p 価格
-          v-select.input(
-            v-model="selected"
-            placeholder="価格を選択"
-            :options="price"
-          )
-        div.select
-          p 口コミ
-          v-select.input(
-            v-model="selected"
-            placeholder="価格を選択"
-            :options="price"
-          )
-    div
+  //ヘッダー
+  Header
+  //検索エリア
+  SearchBox
   h2 カテゴリ
   div
     a(href="/") Webアプリ開発
@@ -114,14 +71,14 @@ section.home
 </template>
 
 <script>
+import Header from '@/components/Header'
+import SearchBox from '@/components/SearchBox'
+
 export default {
   name: 'index',
-  data() {
-    return {
-      selected: '',
-      prefecture: {},
-      price: ['無料','5万円未満','5万円〜10万円','10万円〜20万円','20万円〜50万円','50万円以上']
-    }
+  components: {
+    Header,
+    SearchBox
   }
 }
 </script>
@@ -145,84 +102,6 @@ h2
   padding: 0
   margin: 0
   background: #ffffff
-  .header
-    .header_top
-      height: 60px
-      padding: 0 50px
-      background: #1c385e
-      display: flex
-      justify-content: space-between
-      align-items: center
-      &-text
-        color: #ffffff
-      &-right
-        display: flex
-        p
-          font-size: 14px
-          padding: 2px 3px
-          margin-right: 10px
-          border-radius: 3px
-        .btn_left
-          background: #f9cc46
-        .btn_right
-          color: #ffffff
-          background: #df1843
-    .header_bottom
-      height: 80px
-      background: #1c385e
-      opacity: 0.9
-      display: flex
-      align-items: center
-      justify-content: space-between
-      padding: 0 50px
-      font-size: 24px
-      img
-        width: auto
-      .links
-        color: #ffffff
-        display: flex
-        list-style: none
-        width: auto
-        li
-          margin-left: 22px
-.search
-  background: red
-  padding: 10px 0
-  .search_home
-    max-width: 900px
-    background: #ffffff
-    border-radius: 5px
-    margin: 0 auto
-    padding: 30px 5% 15px 5%
-    &-input
-      h2
-        font-size: 20px
-        color: #1a3153
-      input
-        width: 100%
-        padding: 0 0 0 8px
-        color: #1a3153
-        height: 36px
-        border: 1px solid #dddddd
-        border-radius: 2px
-    &-selects
-      display: flex
-      color: #1a3153
-      .select
-        margin-top: 18px
-        width: 33%
-        p
-          font-size: 16px
-          font-weight: bold
-        .input
-          border: 1px solid #1a3153
-          border-radius: 5px
-          width: 70%
-          span
-            white-space: nowrap
-            font-size: 12px
-        #vs1__combobox
-          border: none
     // .search_home-centerbox
     //   align-items: center
     //   justify-content: space-between
