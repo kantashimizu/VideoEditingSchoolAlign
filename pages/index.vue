@@ -13,7 +13,8 @@ section.home
     a(href="1") IoT・ロボット ゲーム（AR・VR）
     a(href="1") ブロックチェーン データサイエンス
     a(href="1") サイバーセキュリティ
-  h2 受講場所
+  div
+    p 受講場所
     ul
       li (地域名)
       li (地域名)
@@ -102,30 +103,5 @@ h2
   padding: 0
   margin: 0
   background: #ffffff
-    // .search_home-centerbox
-    //   align-items: center
-    //   justify-content: space-between
-    //   border-radius: 20px
-    //   background: #ffffff
-    //   height: 100%
-    //   float: left
-    //   width: 100%
-    //   .search_home-text
-    //     display: inline-block
-    //     .select_box
-    //       display: inline-block
-    //       list-style: none
-    //       margin: 23px 89px
-    // .main-content
-      //padding: 30px 5%
-      //width: 100%
-      //max-width: 100%
-      //padding-bottom: 50px
-      //float: none
-      .main-ranking
-        background: #ffffff
-        //position: relative
-        text-align: center
-        overflow: hidden
-
+  w: hidden
 </style>
