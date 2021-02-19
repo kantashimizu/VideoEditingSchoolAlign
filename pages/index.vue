@@ -4,16 +4,31 @@ section.home
   Header
   //検索エリア
   SearchBox
-  h2 カテゴリ
   div
-    a(href="/") Webアプリ開発
-    a(href="/") スマホアプリ開発
-    a(href="1") UX/UIデザイン
-    a(href="1") ネットワーク・インフラ AI（人工知能）
-    a(href="1") IoT・ロボット ゲーム（AR・VR）
-    a(href="1") ブロックチェーン データサイエンス
-    a(href="1") サイバーセキュリティ
-  div
+  h2.category_title カテゴリ
+  div.sliderbox
+    a.slidercontent(href="/") Webアプリ開発
+    a.slidercontent(href="/") スマホアプリ開発
+    a.slidercontent(href="1") UX/UIデザイン
+    a.slidercontent(href="1") ネットワーク・インフラ AI（人工知能）
+    a.slidercontent(href="1") IoT・ロボット ゲーム（AR・VR）
+    a.slidercontent(href="1") ブロックチェーン データサイエンス
+    a.slidercontent(href="1") サイバーセキュリティ
+  div.main
+    div.main-left
+      div.schol_box
+        ul
+          li.scholLogo
+            p  1
+          li.scholLogo
+            p  2
+          li.scholLogo
+            p  3
+          li.scholLogo
+            p  4
+          li.scholLogo
+            p  5
+    div.main-right
     p 受講場所
     ul
       li (地域名)
@@ -89,12 +104,27 @@ body
   margin: 0
 p
   margin: 0
-h2
-  margin: 0
+.category_title
+  margin: 10px 0px 0px 20px
+a
+  text-decoration: none
 .vs__search, .vs__search:focus
   display: none
 .vs__clear
   display: none
+.sliderbox
+  display: flex
+  overflow: scroll
+  white-space: nowrap
+  margin: 5px 0px 20px 0px
+.sliderbox::-webkit-scrollbar
+  display: none
+.slidercontent
+  margin-left: 20px
+  width: 100%
+.main
+  background-color: red
+  height: 50vh
 </style>
 
 
