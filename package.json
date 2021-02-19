@@ -15,7 +15,7 @@
     "pug": "^3.0.0",
     "pug-loader": "^2.4.0",
     "pug-plain-loader": "^1.1.0",
-    "vue-select": "^3.10.8"
+    "vue-select": "^3.11.2"
   },
   "devDependencies": {
     "node-sass": "^5.0.0",

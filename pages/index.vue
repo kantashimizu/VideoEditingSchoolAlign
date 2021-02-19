@@ -5,7 +5,6 @@ section.home
   //検索エリア
   SearchBox
   div
-  h2.category_title カテゴリ
   div.sliderbox
     a.slidercontent(href="/") Webアプリ開発
     a.slidercontent(href="/") スマホアプリ開発
@@ -14,64 +13,18 @@ section.home
     a.slidercontent(href="1") IoT・ロボット ゲーム（AR・VR）
     a.slidercontent(href="1") ブロックチェーン データサイエンス
     a.slidercontent(href="1") サイバーセキュリティ
-  div.main
+  div#main-contents
     div.main-left
-      div.schol_box
-        ul
-          li.scholLogo
-            p  1
-          li.scholLogo
-            p  2
-          li.scholLogo
-            p  3
-          li.scholLogo
-            p  4
-          li.scholLogo
-            p  5
     div.main-right
-    p 受講場所
-    ul
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-      li (地域名)
-  h2 オンラインスクール
-    p 画像挿入
-  h2 RANKING
-  h2 ランキング
-    ul
-      li: a(href="/") １
-      li: a(href="/") ２
-      li: a(href="/") ３
-      li: a(href="/") ４
-      li: a(href="/") ５
   // footer
-  ul
-    li アイテム
-    li HOME
-    li ランキング
-    li カテゴリ
-    li HOME
-  ul
-    li アイテム
-    li HOME
-    li ランキング
+  div.sliderbox
+    a.slidercontent(href="/") ０００００
+    a.slidercontent(href="/") １１１１１
+    a.slidercontent(href="1") ２２２２２
+    a.slidercontent(href="1") ３３３３３
+    a.slidercontent(href="1") ４４４４４
+    a.slidercontent(href="1") ５５５５５
+    a.slidercontent(href="1") ６６６６６
   h2 お問い合わせ
   p 当サイトに関するお問い合わせフォームです。<br>
     | &emsp;お問い合わせフォーム
@@ -108,6 +61,8 @@ p
   margin: 10px 0px 0px 20px
 a
   text-decoration: none
+a:link,a:visited,a:hover,a:active
+  color: #000
 .vs__search, .vs__search:focus
   display: none
 .vs__clear
@@ -116,15 +71,38 @@ a
   display: flex
   overflow: scroll
   white-space: nowrap
-  margin: 5px 0px 20px 0px
+  margin: 15px 30px 15px 0px
+  z-line: 1
 .sliderbox::-webkit-scrollbar
   display: none
 .slidercontent
   margin-left: 20px
   width: 100%
-.main
+#main-contents
   background-color: red
-  height: 50vh
+  height: 100vh
+  display: flex
+  flex: column
+.main-left
+  width: 70%
+  height: 100vh
+  background-color: rgba
+  border: solid 1px #000
+// .main
+//   width: 90%
+//   height: 100vh
+// .main-01
+//   width: 70%
+//   height: 150px
+//   margin: 0 auto
+//   background-color: white
+//   position: relative
+//   border-radius: 5px
+.main-right
+  width: 30%
+  height: 100vh
+  background-color: rgba 0 0 0 0
+  border: solid 1px #000
 </style>
 
 
