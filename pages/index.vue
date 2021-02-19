@@ -26,8 +26,17 @@ section.home
     a.slidercontent(href="1") ５５５５５
     a.slidercontent(href="1") ６６６６６
   h2 お問い合わせ
-  p 当サイトに関するお問い合わせフォームです。<br>
-    | &emsp;お問い合わせフォーム
+  div.contact
+    div.contact-menu
+      p 当サイトに関するお問い合わせフォームです。
+      form
+        p.font-5.text-red ※下記内容入力の上、「確認画面へ」ボタンをクリックしてください。
+        div#name
+          label お名前
+          span 必須
+          input
+
+
   p VideoEdithingSchoolAlign
   p プログラミングスクール口コミ・評判サイト VideoEdithingSchoolAlign
   ul
@@ -82,27 +91,37 @@ a:link,a:visited,a:hover,a:active
   background-color: red
   height: 100vh
   display: flex
-  flex: column
 .main-left
   width: 70%
   height: 100vh
   background-color: rgba
   border: solid 1px #000
-// .main
-//   width: 90%
-//   height: 100vh
-// .main-01
-//   width: 70%
-//   height: 150px
-//   margin: 0 auto
-//   background-color: white
-//   position: relative
-//   border-radius: 5px
 .main-right
   width: 30%
   height: 100vh
   background-color: rgba 0 0 0 0
   border: solid 1px #000
+.contact
+  width: 100%
+  .contact-menu
+    border-radius: 5px solid #000
+    width: 80%
+    margin: 10px auto
+  .font-5
+    font-size: 5px
+  .text-red
+    color: red
+input
+#name
+  order-radius: 3px
+  padding: 10px 20px
+span
+  color: #fff
+  background-color: pink
+  display: inline-block
+  padding: 2px 5px
+  font-size: 1rem
+
 </style>
 
 
