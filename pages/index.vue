@@ -27,14 +27,23 @@ section.home
     a.slidercontent(href="1") ６６６６６
   h2 お問い合わせ
   div.contact
-    div.contact-menu
+    div.contact-table
       p 当サイトに関するお問い合わせフォームです。
-      form
+      form(action="" method="")
         p.font-5.text-red ※下記内容入力の上、「確認画面へ」ボタンをクリックしてください。
-        div#name
-          label お名前
-          span 必須
-          input
+        div#contact-name
+          label(for='name') お名前：
+          input(type='text' name='name')
+        div#contact-name
+          label(for='name') お問い合わせ内容：
+          select(name="item")
+            option(value='service') サービスについて
+            option(value='other') その他
+        div#contact-name
+          label(for='mail') メールアドレス：
+          input(type='email' name='email')
+        div#contact-name
+          input.text-right(type='submit' value='送信')
 
 
   p VideoEdithingSchoolAlign
@@ -103,25 +112,22 @@ a:link,a:visited,a:hover,a:active
   border: solid 1px #000
 .contact
   width: 100%
-  .contact-menu
+  text-align: center
+  .contact-table
     border-radius: 5px solid #000
-    width: 80%
+    width: 50%
     margin: 10px auto
   .font-5
     font-size: 5px
   .text-red
     color: red
 input
-#name
+#contact-name
   order-radius: 3px
-  padding: 10px 20px
-span
-  color: #fff
-  background-color: pink
-  display: inline-block
-  padding: 2px 5px
-  font-size: 1rem
-
+  padding: 5px 20px
+  text-align: left
+  .text-right
+    text-align: right
 </style>
 
 
