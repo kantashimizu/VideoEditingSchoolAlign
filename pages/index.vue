@@ -66,23 +66,11 @@ section.home
               div#contact-name
                 input.text-right(type='submit' value='送信')
   footer.footer-top
-    //- div
-    //-   ul.footer-sns
-    //-     li.sns-links
-    //-       a(href="/")
-    //-         img(src="https://placehold.jp/50x50.png")
-    //-     li.sns-links
-    //-       a(href="/")
-    //-         img(src="https://placehold.jp/50x50.png")
-    //-     li.sns-links
-    //-        a(href="/") coming soon
-    //-     li.sns-links
-    //-        a(href="/") coming soon
-    //-     li.sns-links
-    //-        a(href="/") coming soon
   footer.footer-bottom
-    p.footer-text.right プログラミングスクール 口コミ・評判サイト VideoEdithingSchoolAlign
-    p.footer-text.left © 2021 VideoEdithingSchoolAlign
+    div.footer-left
+      p.footer-text.right プログラミングスクール 口コミ・評判サイト VideoEdithingSchoolAlign
+    div.footer-right
+      p.footer-text.left © 2021 VideoEdithingSchoolAlign
     script
 
 </template>
@@ -239,6 +227,10 @@ textarea
 .left
   text-align: left
 .right
+  text-align: right
+.footer-left
+  text-align: left
+.footer-right
   text-align: right
 </style>
 
